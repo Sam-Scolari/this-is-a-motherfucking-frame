@@ -1,22 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(request: NextRequest) {
-  return new NextResponse(
-    `
-                <!DOCTYPE html>
-                <html>
-                  <head>
-                        <meta property="fc:frame" content="vNext" />
-                        <meta property="fc:frame:image" content="https://motherfuckingframe.com/1.png" />
-                        <meta property="fc:frame:button:1" content="Next ➡" />
-                        <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/?n=1" />
-                  </head>
-                </html>
-                `,
-    { status: 200, headers: { "content-type": "text/html" } }
-  );
-}
-
 export async function POST(request: NextRequest) {
   const data = await request.json();
 
@@ -33,7 +16,7 @@ export async function POST(request: NextRequest) {
                             <meta property="fc:frame" content="vNext" />
                             <meta property="fc:frame:image" content="https://motherfuckingframe.com/1.png" />
                             <meta property="fc:frame:button:1" content="Next ➡" />
-                            <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/?n=1" />
+                            <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=1" />
                       </head>
                     </html>
                     `,
@@ -50,7 +33,7 @@ export async function POST(request: NextRequest) {
                             <meta property="fc:frame" content="vNext" />
                             <meta property="fc:frame:image" content="https://motherfuckingframe.com/6.png" />
                             <meta property="fc:frame:button:1" content="⬅ Back" />
-                            <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/?n=5" />
+                            <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=5" />
                       </head>
                     </html>
                     `,
@@ -70,7 +53,7 @@ export async function POST(request: NextRequest) {
                               }.png" />
                               <meta property="fc:frame:button:1" content="⬅ Back" />
                               <meta property="fc:frame:button:2" content="Next ➡" />
-                              <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/?v=${
+                              <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?v=${
                                 n - 1
                               }" />
                         </head>
@@ -91,7 +74,7 @@ export async function POST(request: NextRequest) {
                           }.png" />
                           <meta property="fc:frame:button:1" content="⬅ Back" />
                           <meta property="fc:frame:button:2" content="Next ➡" />
-                          <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/?v=${
+                          <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?v=${
                             n + 1
                           }" />
                     </head>
