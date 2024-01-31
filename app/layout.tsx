@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "This is a motherfucking frame",
   description: "And it's fucking perfect",
+  openGraph: {
+    images: ["https://motherfuckingframe.com/1.png"],
+  },
 };
 
 export default function RootLayout({
