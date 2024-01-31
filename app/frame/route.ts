@@ -15,7 +15,8 @@ export async function POST(request: NextRequest) {
                           <head>
                                 <meta property="fc:frame" content="vNext" />
                                 <meta property="fc:frame:image" content="https://motherfuckingframe.com/2.png" />
-                                <meta property="fc:frame:button:1" content="Next ➡" />
+                                <meta property="fc:frame:button:1" content="Back" />
+                                <meta property="fc:frame:button:2" content="Next" />
                                 <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=2" />
                           </head>
                         </html>
@@ -32,7 +33,8 @@ export async function POST(request: NextRequest) {
                           <head>
                                 <meta property="fc:frame" content="vNext" />
                                 <meta property="fc:frame:image" content="https://motherfuckingframe.com/5.png" />
-                                <meta property="fc:frame:button:1" content="⬅ Back" />
+                                <meta property="fc:frame:button:1" content="Back" />
+                                <meta property="fc:frame:button:2" content="Next" />
                                 <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=5" />
                           </head>
                         </html>
@@ -50,8 +52,8 @@ export async function POST(request: NextRequest) {
                               <meta property="fc:frame:image" content="https://motherfuckingframe.com/${
                                 button === 1 ? n - 1 : n + 1
                               }.png" />
-                              <meta property="fc:frame:button:1" content="⬅ Back" />
-                              <meta property="fc:frame:button:2" content="Next ➡" />
+                              <meta property="fc:frame:button:1" content="Back" />
+                              <meta property="fc:frame:button:2" content="Next" />
                               <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=${
                                 button === 1 ? n - 1 : n + 1
                               }" />

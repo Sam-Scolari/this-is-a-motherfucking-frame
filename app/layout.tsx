@@ -18,7 +18,7 @@ export default function RootLayout({
           property="fc:frame:image"
           content="https://motherfuckingframe.com/1.png"
         />
-        <meta property="fc:frame:button:1" content="Next ➡" />
+        <meta property="fc:frame:button:1" content="Next" />
         <meta
           property="fc:frame:post_url"
           content="https://motherfuckingframe.com/frame?n=1"
