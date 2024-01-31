@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "This is a motherfucking website",
+  title: "This is a motherfucking frame",
   description: "And it's fucking perfect",
 };
 
