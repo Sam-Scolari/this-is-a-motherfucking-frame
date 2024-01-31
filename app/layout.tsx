@@ -16,7 +16,7 @@ export default function RootLayout({
         <meta property="fc:frame" content="vNext" />
         <meta
           property="fc:frame:image"
-          content="https://motherfuckingframe.com/1.png"
+          content="https://motherfuckingframe.com/1.webp"
         />
         <meta property="fc:frame:button:1" content="Next" />
         <meta

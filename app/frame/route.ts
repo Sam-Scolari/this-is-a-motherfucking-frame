@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
                         <html>
                           <head>
                                 <meta property="fc:frame" content="vNext" />
-                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/2.png" />
+                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/2.webp" />
                                 <meta property="fc:frame:button:1" content="Back" />
                                 <meta property="fc:frame:button:2" content="Next" />
                                 <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=2" />
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
                         <html>
                           <head>
                                 <meta property="fc:frame" content="vNext" />
-                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/1.png" />
+                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/1.webp" />
                                 <meta property="fc:frame:button:1" content="Next" />
                                 <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=1" />
                           </head>
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
                         <html>
                           <head>
                                 <meta property="fc:frame" content="vNext" />
-                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/8.png" />
+                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/8.webp" />
                                 <meta property="fc:frame:button:1" content="Back" />
                                 <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=8" />
                           </head>
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
                         <html>
                           <head>
                                 <meta property="fc:frame" content="vNext" />
-                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/7.png" />
+                                <meta property="fc:frame:image" content="https://motherfuckingframe.com/7.webp" />
                                 <meta property="fc:frame:button:1" content="Back" />
                                 <meta property="fc:frame:button:2" content="Next" />
                                 <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=7" />
@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
                               <meta property="fc:frame" content="vNext" />
                               <meta property="fc:frame:image" content="https://motherfuckingframe.com/${
                                 button === 1 ? n - 1 : n + 1
-                              }.png" />
+                              }.webp" />
                               <meta property="fc:frame:button:1" content="Back" />
                               <meta property="fc:frame:button:2" content="Next" />
                               <meta property="fc:frame:post_url" content="https://motherfuckingframe.com/frame?n=${
